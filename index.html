@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Asilo de Mendigos de Pelotas</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="logo">Asilo de Pelotas</div>
+      <nav class="main-nav">
+        <button id="menu-button">☰</button>
+        <ul id="menu">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#causas">Nossas Causas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <a href="#doacao" class="btn btn-doar-header">Doar</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Slides -->
+    <section id="inicio" class="slideshow-container">
+      <div id="slideshow" class="slideshow"></div>
+      <button class="slide-btn prev">&#10094;</button>
+      <button class="slide-btn next">&#10095;</button>
+    </section>
+
+    <!-- Causas -->
+    <section id="causas" class="section">
+      <div class="container">
+        <h2>Nossas Causas</h2>
+        <div class="cards">
+          <article class="card">
+            <span class="card-icon">🍴</span>
+            <h3>Alimentação</h3>
+            <p>Refeições nutritivas</p>
+          </article>
+          <article class="card">
+            <span class="card-icon">🏠</span>
+            <h3>Moradia</h3>
+            <p>Abrigo seguro</p>
+          </article>
+          <article class="card">
+            <span class="card-icon">❤️</span>
+            <h3>Saúde</h3>
+            <p>Cuidados médicos</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Sobre -->
+    <section id="sobre" class="section section-sobre">
+      <div class="container">
+        <h2>Mais de 140 Anos de História</h2>
+        <p>O Asilo de Mendigos de Pelotas acolhe e apoia pessoas em situação de vulnerabilidade, promovendo dignidade e bem-estar através de uma longa trajetória de apoio à comunidade local.</p>
+      </div>
+    </section>
+
+    <!-- Doação -->
+    <section id="doacao" class="section section-doacao">
+      <div class="container doacao-container">
+        <div class="doacao-texto">
+          <h1>Faça a Diferença</h1>
+          <p>Sua contribuição nos ajuda a continuar oferecendo um ambiente seguro e acolhedor. Aponte a câmera do seu celular para o QR Code ao lado para doar via PIX.</p>
+        </div>
+        <div class="doacao-qrcode">
+          <img src="images/qrcode-localizacao.png" alt="QR Code para doação" class="qr-code-img">
+          <p class="pix-info"><strong>Chave PIX:</strong> (53) 99999-9999</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section">
+      <div class="container">
+        <h2>Contato</h2>
+        <form id="formContato" novalidate>
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" required />
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" required />
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+          <button type="submit" class="btn btn-enviar">Enviar</button>
+          <p id="msgRetorno"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Asilo de Mendigos de Pelotas. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
